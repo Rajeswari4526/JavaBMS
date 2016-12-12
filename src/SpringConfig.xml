@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+    
+       
+    <bean id="newBugBean" class = "com.beans.Bug" scope = "prototype"></bean>
+    <bean id="addBugInfoBean" class = "com.beans.AddBugInfo" scope = "prototype"></bean>
+    <bean id="bugDetailsBean" class = "com.beans.BugDetails" scope = "prototype"></bean>
+    
+    <bean id="utilityBean" class = "com.beans.Utility" scope = "singleton"></bean>
+    
+ <!-- Production Environment for mongoDB in Mongolab (Remote) -->
+    <bean id="mongoDriverBean" class = "com.datalayer.MongoDriver" scope = "singleton"> 
+       <property name="uri" value="mongodb://testuser1:ZxCvBnM@ds037262.mongolab.com:37262/ticketsystemdb"/>
+       <property name="collection" value="tickets"/>
+    </bean>
+    
+  <!-- Development Environment for mongoDB in local -->
+    <!-- <bean id="mongoDriverBean" class = "com.datalayer.MongoDriver" scope = "singleton"> 
+       <property name="mongoServer" value="localhost"/>
+       <property name="portNo" value="27017"/>
+       <property name="devDatabase" value="test"/>
+       <property name="collection" value="tickets"/>
+    </bean> -->
+        
+      
+    </beans>
+    
+    
+    

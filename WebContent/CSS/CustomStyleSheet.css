@@ -1,0 +1,185 @@
+
+header{
+
+	/* Aqua background-color: #4FC1E9;*/
+	/* Mint*/ background-color: #48CFAD; 
+	width:100%;
+	height:60px;
+	margin-top: -20px;
+	/*Original height 90*/
+}
+
+body{
+
+	background-color: #F5F7FA;
+}
+
+.siteTitle{
+	text-align: center;
+	position: relative;
+	top: 14px;
+}
+
+footer{
+
+	background:#AAB2BD;
+	width:100%;
+	height:44px;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+
+.footerContent{
+		text-align: center;
+		color:#000000;
+		position: relative;
+		top: 13px;
+		font-weight: bold;
+}
+
+
+.mainContainer{
+	/*width:1366px;*/
+	width:100%;
+	height: 525px;
+	/*background-color: #E9573F;*/
+}
+
+.leftSection{
+    width:215px;
+	height: 100%;
+	font-weight: 1px;
+	border : 2px solid #4FC1E9;
+	border-radius: 2px 6px 6px 2px;
+	background-color: #E6E9ED;
+	position: relative;
+	top: 5px;
+	float:left;
+}
+
+.rightSection{
+	/*background-color: #E9573F;*/
+	float:left;
+	height: 500px;
+	width: 1000px;
+	position:relative;
+	top:20px;
+	left:5px;
+}
+
+/*Setting the button width, height properties in left menu section.*/
+.btn{
+	width:200px;
+	height:37px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+
+/*Setting the button height, width properties in admin page.*/
+.button{
+	position:relative;
+	top:-2px;
+    height:34px;
+	width:130px;
+}
+
+
+/*Setting the button height, width properties in bug menu options.*/
+.line{
+}
+
+.tableSize{
+	width:600px;
+}
+
+
+.newBugTableProps{
+	width:600px;
+	margin-left: 40px;
+}
+
+.tableRow{
+    width:600px;
+    height:40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.button-center{
+	position:relative;
+	top:10px;
+    height:34px;
+	width:80px;
+	left:170px;
+}
+
+
+
+/*Setting the column width details for bug details table. */
+.bugDetailRow1{
+    width="10%";
+    text-align: left;
+    border: 1px solid #999;
+    padding: 0.5rem;
+}
+
+.bugDetailRow2{
+    width="20%";
+    text-align: left;
+    border: 1px solid #999;
+    padding: 0.5rem;
+}
+
+.bugDetailRow3{
+    width="15%";
+    text-align: left;
+    border: 1px solid #999;
+    padding: 0.5rem;
+}
+
+.bugListTable th{
+	text-align:center;
+}
+
+.update-bug{
+    width:70px;
+	height:30px;
+}
+
+
+/*table{
+	table-layout: fixed;
+}*/
+
+/* Paste this css to your style sheet file or under head tag */
+/* This only works with JavaScript, 
+if it's not present, don't show loader */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../images/Preloader_1.gif) center no-repeat #fff;
+}
+
+.spinner {
+	position:absolute;
+	z-index:999;
+	top:50%;
+	left:50%;
+   /* z-index: 9999;
+	/*margin-top:auto;
+	margin-down:auto;
+    margin-left: auto;
+    margin-right: auto;
+    width:64px;
+    height:64px;
+	img: url(../images/Preloader_3.gif) center no-repeat #fff;*/	
+}
+
